@@ -1,0 +1,13 @@
+body {
+    font-family: Arial;
+    padding: 30px;
+}
+pre {
+    background: #f0f0f0;
+    padding: 15px;
+    white-space: pre-wrap;
+    border-radius: 4px;
+}
+button {
+    padding: 10px 25px;
+}

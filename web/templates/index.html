@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>OCR DocTR</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>OCR DocTR – Tiếng Việt</h1>
+
+<form action="/ocr" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" required>
+    <button type="submit">Quét OCR</button>
+</form>
+
+{% if raw %}
+<h2>Kết quả OCR Raw</h2>
+<pre>{{ raw }}</pre>
+
+<h2>Kết quả sau sửa lỗi tiếng Việt</h2>
+<pre>{{ fixed }}</pre>
+{% endif %}
+
+</body>
+</html>
