@@ -1,1 +1,35 @@
+# Virtual Environment
 .venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Temporary Files
+temp_*.jpg
+temp_*.png
+temp_*.jpeg
+*.tmp
+
+# Test Output Files
+result_*.txt
+final_result.txt
+output_*.txt
+
+# Archives
+*.zip
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

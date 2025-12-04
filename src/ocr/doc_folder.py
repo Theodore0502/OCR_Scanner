@@ -1,4 +1,4 @@
-from src.ocr.engine_paddle import ocr_paddle_image
+from ocr.engine_doctr import ocr_paddle_image
 from src.ocr.pdf_utils import load_images_from_doc
 
 def ocr_document_paddle(doc_id, mode="raw"):

@@ -1,0 +1,37 @@
+{
+    "paths": {
+        "vietnamese_dictionary": "data/processed/vietnamese_words.txt",
+        "raw_dict_jsonl": "data/raw_dict.jsonl"
+    },
+    "ocr": {
+        "use_gpu": false,
+        "default_engine": "doctr",
+        "preprocessing": {
+            "enabled": false,
+            "deskew": false,
+            "denoise": false
+        }
+    },
+    "post_processing": {
+        "use_phobert_correction": false,
+        "use_ngram_correction": true,
+        "use_fast_spell_checker": true,
+        "phobert_confidence_threshold": 0.7,
+        "spell_checker": {
+            "max_edit_distance": 2,
+            "max_candidates": 5,
+            "min_word_length": 3,
+            "confidence_threshold": 0.6
+        }
+    },
+    "paddle_ocr": {
+        "use_gpu": false,
+        "lang": "vi",
+        "show_log": false
+    },
+    "performance": {
+        "enable_caching": true,
+        "cache_size": 10000,
+        "batch_size": 32
+    }
+}
